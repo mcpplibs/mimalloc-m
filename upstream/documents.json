@@ -1,0 +1,17 @@
+{
+  "upstream": "https://github.com/microsoft/mimalloc/archive/refs/tags/v3.6.1.tar.gz",
+  "upstream_sha256": "2672e6a99d4579fb4bb32d9de0d63aa424ce600d31fbfaf06eb74d940d2e07a6",
+  "pruning": "Nothing of mimalloc is vendored: the library is compat.mimalloc 3.6.1's, from the same tarball, and the typed macros of include/mwrap/mimalloc/macros.hpp are upstream's definitions, written out. Its README and license are retained here. The conformance run builds the release's test/test-api.c and test/test-stress.c against compat.mimalloc, from the tarball downloaded at test time.",
+  "documents": [
+    {
+      "path": "upstream/mimalloc/README.md",
+      "source": "https://github.com/microsoft/mimalloc/blob/v3.6.1/readme.md",
+      "sha256": "626a7860aabfa8b4c03b8365771a81d79abf7f7f3823cc1f40a09a6bcaa21cac"
+    },
+    {
+      "path": "upstream/mimalloc/LICENSE",
+      "source": "https://github.com/microsoft/mimalloc/blob/v3.6.1/LICENSE",
+      "sha256": "82ade5d7d9b029044b5fbbc326207fc47c2d44ee4dd71e8a559c36d728217de9"
+    }
+  ]
+}

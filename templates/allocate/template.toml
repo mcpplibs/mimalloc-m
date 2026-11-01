@@ -1,0 +1,4 @@
+[template]
+description  = "Allocation with import mcpplibs.mwrap.mimalloc: a private heap, aligned blocks, an STL container over mimalloc, and the statistics"
+default      = true
+post_message = "Run `mcpp run`, or `mcpp run -- <blocks>`."

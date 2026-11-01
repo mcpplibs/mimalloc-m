@@ -1,0 +1,13 @@
+mimalloc-m: C++ module wrapper
+Copyright (c) 2026 mcpp-community contributors
+
+The wrapper contributions are licensed under the Apache License, Version 2.0.
+Upstream code, copied interfaces and dependencies retain their original
+licenses and copyright notices. mimalloc is distributed under the MIT license:
+
+  Copyright (c) 2018-2026 Microsoft Corporation, Daan Leijen.
+
+Its original README and license are retained in upstream/mimalloc/. The
+library itself is provided by compat.mimalloc from the same release, and the
+typed macros of include/mwrap/mimalloc/macros.hpp are upstream's definitions.
+Provenance and checksums are recorded in upstream/documents.json.
