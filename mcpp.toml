@@ -1,0 +1,43 @@
+# Module wrapper; upstream API preserved. Policy: mcpp-index/docs/mwrap.md.
+[package]
+namespace   = "mcpplibs.mwrap"
+name        = "mimalloc"
+version     = "3.6.1"
+description = "mimalloc 3.6.1 C++ modules for mcpp (import mcpplibs.mwrap.mimalloc;): Microsoft's general-purpose allocator over compat.mimalloc, its heaps, options, statistics, profiler and STL allocators"
+license     = "Apache-2.0"
+authors     = ["mcpp-community"]
+repo        = "https://github.com/mcpplibs/mimalloc-m"
+platforms   = ["linux", "macos", "windows"]
+
+[targets.mimalloc]
+kind = "lib"
+
+[build]
+sources      = ["src/*.cppm"]
+# <mwrap/mimalloc/macros.hpp>: the typed macros (mi_malloc_tp …).
+include_dirs = ["include"]
+
+[dependencies]
+compat.mimalloc = "3.6.1"
+
+[test]
+discover = ["tests/*.cpp"]
+
+[package.metadata.mwrap]
+upstream-version = "3.6.1"
+
+[[runtime.deploy]]
+from = "LICENSE"
+to   = "licenses/mimalloc"
+
+[[runtime.deploy]]
+from = "NOTICE"
+to   = "licenses/mimalloc"
+
+[[runtime.deploy]]
+from = "upstream/mimalloc/README.md"
+to   = "licenses/mimalloc/upstream/mimalloc"
+
+[[runtime.deploy]]
+from = "upstream/mimalloc/LICENSE"
+to   = "licenses/mimalloc/upstream/mimalloc"
