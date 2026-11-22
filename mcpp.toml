@@ -2,7 +2,7 @@
 [package]
 namespace   = "mcpplibs.mwrap"
 name        = "mimalloc"
-version     = "3.6.1"
+version     = "3.6.1.1"
 description = "mimalloc 3.6.1 C++ modules for mcpp (import mcpplibs.mwrap.mimalloc;): Microsoft's general-purpose allocator over compat.mimalloc, its heaps, options, statistics, profiler and STL allocators"
 license     = "Apache-2.0"
 authors     = ["mcpp-community"]

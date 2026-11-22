@@ -28,7 +28,7 @@ library.
 ## Getting started
 
 ```sh
-mcpp new allocate --template mcpplibs.mwrap.mimalloc@3.6.1
+mcpp new allocate --template mcpplibs.mwrap.mimalloc@3.6.1.1
 cd allocate
 mcpp run
 ```
@@ -39,7 +39,7 @@ the version.
 
 ```toml
 [dependencies]
-"mcpplibs.mwrap.mimalloc" = "3.6.1"
+mcpplibs.mwrap.mimalloc = "3.6.1.1"
 ```
 
 ```cpp
